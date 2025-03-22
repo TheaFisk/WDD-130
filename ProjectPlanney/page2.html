@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staggered Subpage</title>
+    <link rel="stylesheet" href="styles/page2-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Images/Project PlanneyLogo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="page1.html">RC Plane</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h1>Welcome to the Staggered Subpage</h1>
+            <p>This page highlights various aspects of my work, presented in a visually engaging manner.</p>
+        </section>
+        <section id="gallery">
+            <div class="gallery-item">
+                <img src="Images/Radio Images/radio1.JPG" alt="Image 1" class="bordered-image left">
+                <p class="text-block">This image showcases the initial concept of the project, laying the foundation for further development.</p>
+            </div>
+            <div class="gallery-item staggered">
+                <p class="text-block">Here, you can see the evolution of the design as it takes shape through multiple iterations.</p>
+                <img src="Images/Radio Images/radio2.JPG" alt="Image 2" class="bordered-image right">
+            </div>
+            <div class="gallery-item">
+                <img src="Images/Radio Images/radio3.JPG" alt="Image 3" class="bordered-image left">
+                <p class="text-block">This phase of the project focused on refining details and ensuring quality execution.</p>
+            </div>
+            <div class="gallery-item staggered">
+                <p class="text-block">The final product is a testament to careful planning, creativity, and attention to detail.</p>
+                <img src="Images/Radio Images/radio4.JPG" alt="Image 4" class="bordered-image right">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script>
+        window.onscroll = function() { updateProgressBar(); };
+        function updateProgressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
+    </script>
+</body>
+</html>
