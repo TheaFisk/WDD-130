@@ -96,6 +96,7 @@ main section {
 
 
 
+
 #background {
     height: 725px;
     background-color: var(--accent2-color);
@@ -137,7 +138,8 @@ main section {
 }
 
 .rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
+    margin: 100px 0; /* Moves them upwards while keeping them spaced */
+    position: relative;
 }
 
 .card-img {
@@ -281,6 +283,59 @@ footer {
     box-shadow: 5px 5px 10px var(--primary-color);
 }
 
+/* Pricing Section */
+.pricing-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.pricing-card {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 15px;
+    color: var(--primary-color);
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.book-now {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: var(--primary-color);
+}
+
 
 
 
@@ -328,3 +383,4 @@ footer {
         margin-top: 25px;
     }
 }
+
