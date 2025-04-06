@@ -2,17 +2,19 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #208831   ;
-  --secondary-color: #ffdc75 ;
-  --accent1-color: #e574f0;
+  --primary-color: #97d0ff   ;
+  --secondary-color: #4B0082 ;
+  --accent1-color: #CE93D8;
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Cinzel, Quicksand, Mulish;
+  --heading-font: Winky;
+  --paragraph-font: Poppins;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #396E94;  /* headlines on a white background */ 
@@ -20,10 +22,10 @@ Fonts are separated by a | */
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #ffe062;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-link-color: white;
+  --nav-background-color: #9370DB;
+  --nav-hover-link-color: rgb(28, 0, 59);
+  --nav-hover-background-color: #6ac1ff;
 }
 
 

@@ -1,10 +1,35 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #97d0ff   ;
+  --secondary-color: #4B0082 ;
+  --accent1-color: #CE93D8;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Winky;
+  --paragraph-font: Poppins;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: white;
+  --nav-background-color: #9370DB;
+  --nav-hover-link-color: rgb(28, 0, 59);
+  --nav-hover-background-color: #6ac1ff;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top, #009ad6, #d1faff);
+    background: linear-gradient(to top, #005eac, #e0fbff);
     color: #333;
 }
 
@@ -13,35 +38,60 @@ body {
     height:100px;
 }
 
+
 header {
-    background-color: #63b9ff;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  background-color: var(--nav-background-color);
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.logo {
+  height: 75px;
+  width: 75px;
+  margin-right: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.3s;
 }
 
+nav ul li a:hover {
+  background-color: var(--nav-hover-background-color);
+  border-radius: 5px;
+}
 main {
     padding-top: 80px;
     text-align: center;
@@ -87,7 +137,7 @@ main {
 }
 
 footer {
-    background-color: #63b9ff;
+    background-color: var(--nav-background-color);
     color: white;
     text-align: center;
     padding: 10px 0;
